@@ -47,7 +47,7 @@ const Settings = () => {
   };
 
   const handleDeleteAccount = async () => {
-    if (window.confirm('Are you sure you want to delete your account?')) {
+    if (window.confirm('Are you sure you want to deactivate your account?')) {
       try {
         // await deleteUserAccount(); // Replace with your user account deletion logic
         // Redirect to login page or handle user deletion appropriately
@@ -80,7 +80,7 @@ const Settings = () => {
           <button type="submit">Update Profile</button>
         </form>
       )}
-      <button onClick={handleDeleteAccount}>Delete Account</button>
+      <button onClick={handleDeleteAccount}>Deactivate Account</button>
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
