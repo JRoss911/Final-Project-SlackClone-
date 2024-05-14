@@ -9,7 +9,7 @@ import MainComponent from './Components/MainComponent/MainComponent';
 function App() {
   return (
     <Router>
-      {/* <channels /> */}
+      <channels />
       <Container>
         <Routes>
           <Route path="/home" element={<Home />} />

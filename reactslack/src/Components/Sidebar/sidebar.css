@@ -82,6 +82,7 @@
   top: 0;
   bottom: 0;
   overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+  font-size: 30px;
 }
 
 .sidebar h1 {
@@ -108,10 +109,12 @@
 .add-channel {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .add-channel input {
   margin-right: 10px;
+  font-size: 20px;
 }
 
 .add-channel button {
@@ -135,6 +138,7 @@
   padding: 5px 10px;
   cursor: pointer;
   margin-left: 5px;
+  font-size: 20px;
 }
 
 .sidebar ul li button:hover,

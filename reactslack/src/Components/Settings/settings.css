@@ -3,12 +3,14 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 32px;
 }
 
 .settings-page {
   display: flex; /* Arrange settings and content side-by-side */
   width: 100vw; /* Take up full viewport width */
   min-height: 100vh; /* Cover full viewport height */
+  font-size: 32px;
 }
 
 /* Settings section */
@@ -21,35 +23,43 @@ body {
 
 .settings-title {
   font-weight: bold;
-  margin-bottom: 10px; /* Space between title and settings */
+  margin-bottom: 15px; /* Space between title and settings */
+  font-size: 32px;
 }
 
 .settings-list {
   list-style: none; /* Remove default bullet points */
   padding: 0; /* Reset default padding */
   margin: 0; /* Reset default margin */
+  font-size: 32px;
 }
 
 .settings-list li {
-  margin-bottom: 10px; /* Space between settings items */
+  margin-bottom: 25px; /* Space between settings items */
+  font-size: 32px;
 }
 
 .settings-link {
   text-decoration: none; /* Remove underline from links */
   color: #333; /* Text color for settings links */
+  font-size: 32px;
 }
 
 .settings-link:hover {
   color: #007bff; /* Change color on hover */
+  font-size: 32px;
 }
 
 /* Content section */
 .content-section {
   flex: 1; /* Take up remaining space */
   padding: 20px; /* Padding for content */
+  font-size: 32px;
 }
 
+/* Increase font size of content heading by 300% */
 .content-heading {
   font-weight: bold;
   margin-bottom: 10px; /* Space between heading and content */
+  font-size: 200%;
 }

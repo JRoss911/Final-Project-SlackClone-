@@ -13,16 +13,18 @@
 
 .right-side-bar h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 35px;
 }
 
 .right-side-bar ul {
   list-style-type: none;
   padding: 0;
+  font-size: 30px;
 }
 
 .right-side-bar ul li {
   margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .add-channel {
@@ -65,19 +67,23 @@
 .right-side-bar ul {
   list-style-type: none;
   padding: 0;
+  font-size: 30px;
 }
 
 .right-side-bar ul li {
   margin-bottom: 10px;
   cursor: pointer;
   font-weight: normal; /* Reset font weight to normal for all list items */
+  font-size: 30px;
 }
 
 .right-side-bar ul li.active {
   font-weight: bold; /* Set font weight to bold for active tab */
+  font-size: 30px;
 }
 .profile-placeholder {
   text-decoration: underline;
+  font-size: 25px;
 }
 
 /* Channel link style (assuming no links in RightSidebar currently) */

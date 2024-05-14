@@ -29,12 +29,12 @@ public class Workspace implements Serializable {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "workspace")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "workspace")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "workspace", "messages", "members" }, allowSetters = true)
     private Set<Channel> channels = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "workspaces")
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "workspaces")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "user", "messages", "mentions", "workspaces", "channels" }, allowSetters = true)
     private Set<UserProfile> members = new HashSet<>();
