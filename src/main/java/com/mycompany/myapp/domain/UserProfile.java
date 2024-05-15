@@ -36,21 +36,21 @@ public class UserProfile implements Serializable {
     @Column(name = "status")
     private String status;
 
-    @OneToOne(fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(unique = true)
     private User user;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userProfile")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userProfile")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "channel", "userProfile", "mentions" }, allowSetters = true)
     private Set<Message> messages = new HashSet<>();
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userProfile")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userProfile")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "message", "userProfile" }, allowSetters = true)
     private Set<Mention> mentions = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
         name = "rel_user_profile__workspaces",
         joinColumns = @JoinColumn(name = "user_profile_id"),
@@ -60,7 +60,7 @@ public class UserProfile implements Serializable {
     @JsonIgnoreProperties(value = { "channels", "members" }, allowSetters = true)
     private Set<Workspace> workspaces = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
         name = "rel_user_profile__channels",
         joinColumns = @JoinColumn(name = "user_profile_id"),

@@ -11,6 +11,4 @@ public interface UserProfileRepositoryWithBagRelationships {
     List<UserProfile> fetchBagRelationships(List<UserProfile> userProfiles);
 
     Page<UserProfile> fetchBagRelationships(Page<UserProfile> userProfiles);
-    //I created this
-    //    Optional<UserProfile> fetchBagRelationshipsByUser(Optional<UserProfile> userProfile);
 }

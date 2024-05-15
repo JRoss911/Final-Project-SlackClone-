@@ -33,15 +33,15 @@ public class Message implements Serializable {
     @Column(name = "timestamp")
     private Integer timestamp;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties(value = { "workspace", "messages", "members" }, allowSetters = true)
     private Channel channel;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties(value = { "user", "messages", "mentions", "workspaces", "channels" }, allowSetters = true)
     private UserProfile userProfile;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "message")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "message")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "message", "userProfile" }, allowSetters = true)
     private Set<Mention> mentions = new HashSet<>();

@@ -3,14 +3,14 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .settings-page {
   display: flex; /* Arrange settings and content side-by-side */
   width: 100vw; /* Take up full viewport width */
   min-height: 100vh; /* Cover full viewport height */
-  font-size: 32px;
+  font-size: 30px;
 }
 
 /* Settings section */
@@ -24,14 +24,14 @@ body {
 .settings-title {
   font-weight: bold;
   margin-bottom: 15px; /* Space between title and settings */
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .settings-list {
   list-style: none; /* Remove default bullet points */
   padding: 0; /* Reset default padding */
   margin: 0; /* Reset default margin */
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .settings-list li {

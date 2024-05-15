@@ -108,8 +108,15 @@
       flex: 1.5;
       background-color: #3e3c61;
       position: relative;
-      font-size: 18px;
-      padding: 30px 25px 25px 8px;
+      font-size: 15px;
+      padding: 20px 30px 45px 30px;
+      ul {
+        flex: 1.5;
+        background-color: #3e3c61;
+        position: relative;
+        font-size: 15px;
+        padding: 20px 30px 30px 20px;
+      }
     }
 
     .sidebar {
@@ -202,7 +209,7 @@
             font-weight: 500;
           }
           p {
-            font-size: 14px;
+            font-size: 20px;
             color: lightgray;
           }
         }
@@ -260,7 +267,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            font-size: 35px;
+            font-size: 20px;
 
             p {
               background-color: white;
@@ -302,7 +309,7 @@
           border: none;
           outline: none;
           color: #2f2d52;
-          font-size: 36px;
+          font-size: 20px;
 
           &::placeholder {
             color: lightgray;

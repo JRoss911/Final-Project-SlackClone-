@@ -9,7 +9,7 @@ function Home() {
         <StyledH1>Welcome to Tabletalk</StyledH1>
         <p>Please sign in or register to get started.</p>
         <div className="button-container">
-          <Link to="/login" className="login-button">
+          <Link to="/" className="login-button">
             Login/Register
           </Link>
         </div>
@@ -23,7 +23,7 @@ export default Home;
 const HomeContainer = styled.div`
   width: 100%;
   height: 50%;
-  background: turquoise;
+  background:;
 `;
 const StyledH1 = styled.h1`
   font-size: 3rem; /* This will make the h1 font size 2 times the base font size */
